@@ -1,0 +1,52 @@
+{
+  "name": "skill-tracker",
+  "version": "1.0.0",
+  "description": "CLI tool to analyze Claude Code skill and agent usage from JSONL conversation files. Shows which skills cost the most tokens, agent spawn frequency, and estimated USD costs with turn-based attribution.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "skill-tracker": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "claude-code",
+    "anthropic",
+    "token-usage",
+    "analytics",
+    "skills",
+    "agents",
+    "cli",
+    "jsonl",
+    "cost-tracking"
+  ],
+  "license": "MIT",
+  "author": "Leon",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
