@@ -1,6 +1,6 @@
 {
   "name": "skill-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI tool to analyze Claude Code skill and agent usage from JSONL conversation files. Shows which skills cost the most tokens, agent spawn frequency, and estimated USD costs with turn-based attribution.",
   "type": "module",
   "main": "dist/index.js",
